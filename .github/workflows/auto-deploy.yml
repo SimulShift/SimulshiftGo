@@ -21,4 +21,4 @@ jobs:
 
       - name: Deploy to Remote Server
         run: |
-          ssh -o StrictHostKeyChecking=no user@remote-server "cd /path/to/your/repo && git pull origin main"
+          ssh -o StrictHostKeyChecking=no x@146.190.199.222 "cd ~/SimulshiftGo && git pull"
