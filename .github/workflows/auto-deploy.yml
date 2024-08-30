@@ -17,7 +17,7 @@ jobs:
           mkdir -p ~/.ssh
           echo "${{ secrets.SSH_DEPLOY_KEY }}" > ~/.ssh/id_ed25519
           chmod 600 ~/.ssh/id_ed25519
-          ssh-keyscan remote-server >> ~/.ssh/known_hosts
+          ssh-keyscan 146.190.199.222 >> ~/.ssh/known_hosts
 
       - name: Deploy to Remote Server
         run: |
