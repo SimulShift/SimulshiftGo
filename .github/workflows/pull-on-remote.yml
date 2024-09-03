@@ -1,9 +1,9 @@
 name: Auto Deploy on Push
 
-on:
-  push:
-    branches:
-      - master
+#on:
+#  push:
+#    branches:
+#      - master
 
 jobs:
   deploy:
