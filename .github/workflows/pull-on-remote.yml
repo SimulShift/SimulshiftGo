@@ -1,4 +1,4 @@
-name: Auto Deploy on Push
+name: Pull on remote repo
 
 #on:
 #  push:
