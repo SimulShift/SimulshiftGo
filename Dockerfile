@@ -1,6 +1,6 @@
 # Use the official Golang image to create a build artifact.
 # This image is based on Debian and includes Golang installed.
-FROM golang:1.18 as builder
+FROM golang:1.21-alpine AS builder
 
 # Set the working directory outside $GOPATH to enable the support for modules.
 WORKDIR /app
