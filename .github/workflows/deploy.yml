@@ -41,6 +41,6 @@ jobs:
           script: |
             cd /home/${{ secrets.SERVER_USER }}/simulshiftgo
             docker build -t simulshiftgo:${{ github.sha }} .
-            docker stop myapp || true
-            docker rm myapp || true
-            docker run -d --name myapp -p 9001:9001 simulshiftgo:${{ github.sha }}
+            docker stop simulshiftgo || true
+            docker rm simulshiftgo || true
+            docker run -d --name simulshiftgo -p 9001:9001 simulshiftgo:${{ github.sha }}
