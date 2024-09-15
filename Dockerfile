@@ -28,7 +28,7 @@ WORKDIR /root/
 # Ensure we use the exact file name as specified in the builder stage.
 COPY --from=builder /app/server .
 
-# Expose port 9001 to the outside once the container has launched.
+# Expose port 9102 to the outside once the container has launched.
 EXPOSE 9102
 
 # Command to run the executable.
