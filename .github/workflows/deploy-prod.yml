@@ -43,4 +43,4 @@ jobs:
             docker build -t simulshiftgo:${{ github.sha }} .
             docker stop simulshiftgo || true
             docker rm simulshiftgo || true
-            docker run -d --name simulshiftgo --network prod -p 9102:9102 simulshiftgo:${{ github.sha }}
+            docker run -d --name simulshiftgo-prod --network prod -p 9102:9102 simulshiftgo:${{ github.sha }}
