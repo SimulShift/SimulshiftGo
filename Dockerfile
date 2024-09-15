@@ -29,7 +29,7 @@ WORKDIR /root/
 COPY --from=builder /app/server .
 
 # Expose port 9001 to the outside once the container has launched.
-EXPOSE 9001
+EXPOSE 9102
 
 # Command to run the executable.
 CMD ["./server"]

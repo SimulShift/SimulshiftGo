@@ -98,6 +98,6 @@ func main() {
 	http.HandleFunc("/echo", serveWs)
 	go manager.start()
 
-	log.Println("Server started on :9001")
-	log.Fatal(http.ListenAndServe(":9001", nil))
+	log.Println("Server started on :9102")
+	log.Fatal(http.ListenAndServe(":9102", nil))
 }
