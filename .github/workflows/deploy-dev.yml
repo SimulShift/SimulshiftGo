@@ -40,7 +40,7 @@ jobs:
           key: ${{ secrets.SSH_PRIVATE_KEY }}
           script: |
             cd /home/${{ secrets.SERVER_USER }}/simulshiftgo
-            docker build -t simulshiftgo:${{ github.sha }} .
-            docker stop simulshiftgo || true
-            docker rm simulshiftgo || true
-            docker run -d --name simulshiftgo-dev --network dev simulshiftgo:${{ github.sha }}
+            docker build -t simulshiftgo-dev:${{ github.sha }} .
+            docker stop simulshiftgo-dev || true
+            docker rm simulshiftgo-dev || true
+            docker run -d --name simulshiftgo-dev --network dev simulshiftgo-dev:${{ github.sha }}
